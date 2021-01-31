@@ -14,12 +14,13 @@ body {
 	--color-bg: #000000;
 	--color-link: #395bb5;
 	--color-link-hover: #000100;
-	--color-gallery-title: #2c2724;
+	--color-gallery-title: #978c77;
+	--color-gallery-tags: #978c77;
 	--color-gallery-number: #d9d0be;
-	--color-gallery-link: #fff;
-	--color-gallery-link-bg: #2858d7;
+	--color-gallery-link: rgb(0, 0, 0);
+	--color-gallery-link-bg: #ffffff;
 	--color-gallery-link-hover: #fff;
-	--color-gallery-link-bg-hover: #d4b77d;
+	--color-gallery-link-bg-hover: #b19766;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	--cursor-stroke: none;
