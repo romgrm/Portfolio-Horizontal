@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-horizontal",
+  "name": "Portfolio-Horizontal",
   "version": "1.0.0",
   "description": "Romgrm's Portfolio",
   "main": "src/js/index.js",
@@ -11,21 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/romgrm/Portfolio-Horizontal.git"
+    "url": "https://github.com/romgrm/Portfolio-Horizontal.git"
   },
   "keywords": [],
   "author": "Romain Greaume",
   "license": "MIT",
   "homepage": "http://[HOMEPAGE]",
+  "bugs": {
+  },
   "dependencies": {
     "gsap": "^3.5.1",
     "imagesloaded": "^4.1.4",
     "locomotive-scroll": "^4.0.6",
     "parcel-bundler": "^1.12.4",
     "vanilla-tilt": "^1.7.0"
-  },
-  "devDependencies": {},
-  "bugs": {
-    "url": "https://github.com/romgrm/Portfolio-Horizontal/issues"
   }
 }
