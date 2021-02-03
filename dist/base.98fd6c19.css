@@ -11,7 +11,7 @@
 body {
 	margin: 0;
 	--color-text: #000100;
-	--color-bg: #000000;
+	--color-bg: rgb(236, 185, 126);
 	--color-link: #395bb5;
 	--color-link-hover: #000100;
 	--color-gallery-title: #978c77;
