@@ -18,8 +18,8 @@ body {
 	--color-gallery-title: #978c77;
 	--color-gallery-tags: #978c77;
 	--color-gallery-number: #d9d0be;
-	--color-gallery-link: rgb(255, 255, 255);
-	--color-gallery-link-bg: #000;
+	--color-gallery-link: rgb(0, 0, 0);
+	--color-gallery-link-bg: #ffffff;
 	--color-gallery-link-hover: #fff;
 	--color-gallery-link-bg-hover: #b19766;
 	color: var(--color-text);
@@ -255,5 +255,3 @@ html.has-scroll-smooth {
 	[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
 	  right: auto;
 	  bottom: 0; }
-
-/*# sourceMappingURL=/base.98fd6c19.css.map */
