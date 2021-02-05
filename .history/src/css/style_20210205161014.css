@@ -228,22 +228,22 @@
 .gallery__item-imginner1:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Cms_Numenor.20c40e7e.png");
+	background-image: url("../img/Projects/Cms_Numenor.png");
 }
 .gallery__item-imginner2:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/jenaipasdevoiture.9c0dea93.png");
+	background-image: url("../img/Projects/jenaipasdevoiture.png");
 }
 .gallery__item-imginner3:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Pokedex.3aecef88.png");
+	background-image: url("../img/Projects/Pokedex.png");
 }
 .gallery__item-imginner4:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Cms_Numenor.20c40e7e.png");
+	background-image: url("../img/Projects/Cms_Numenor.png");
 }
 
 .gallery__item-caption {
@@ -573,7 +573,7 @@
 
 @media all and (max-width: 1024px){
 	
-	/* ************** CONTENT PROJECT ***************
+	/*************** CONTENT PROJECT ****************/
 	.gallery__item-img:hover  .gallery__content-project {
 		bottom: 50px; 
 	}
@@ -584,14 +584,14 @@
 		 font-size: 14px;
 	}
 	/******************** STACK ********************/
-	/* .gallery__square{
+	.gallery__square{
 		width: 300px;
 		height: 100%;
 	}
 	.square{
 		width: 300px;
 		height: 300px; 
-	} */ 
+	}
 }
 
 /************************************************************************************************************************************************************************************/
@@ -666,7 +666,6 @@
 	.gallery__item{
 		justify-content: center;
 		padding-top: 5px;
-		grid-template-rows: 2rem 28vmax 3rem;
 	}
 	.gallery__item:nth-child(even) {
 		padding-top: 0;
@@ -676,8 +675,7 @@
 		padding-top: 5px;
 	} */
 	.gallery__item-tags{
-		font-size: 1.5em;
-		margin-top: 20px;
+		font-size: 2em;
 	}
 	
 	/******************** STACK ********************/
@@ -750,5 +748,3 @@
 	}
 	
 }
-
-/*# sourceMappingURL=/style.78032849.css.map */
