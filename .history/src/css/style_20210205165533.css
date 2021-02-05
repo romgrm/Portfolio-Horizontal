@@ -360,10 +360,10 @@
 
 .gallery__text_name {
 	font-size: 20vw;
-	line-height: 0.9;
+	line-height: 0.8;
 	margin: 0 10vw 0 0;
 	/* margin: 7vw 10vw 10vw 0; */
-	text-transform: uppercase;
+	/* text-transform: lowercase; */
 	color: var(--color-gallery-title);
 	color: transparent;
 	-webkit-text-stroke: 3px #978c77;
@@ -376,7 +376,7 @@
 	display: block;
 	/* padding-right: 100px;  */
 	/* font-size: 15vw;  */
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
 	/* margin-top: 100px;  */
 	/* margin-bottom: 30px;  */
 }
@@ -385,7 +385,7 @@
 	/* padding-right: 100px; */
 	/*font-size: 15vw;  */
 	/* margin-top: 20px; */
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
 }
 .gallery__text-inner_job{
 	display: block; 

@@ -360,7 +360,7 @@
 
 .gallery__text_name {
 	font-size: 20vw;
-	line-height: 0.9;
+	line-height: 1;
 	margin: 0 10vw 0 0;
 	/* margin: 7vw 10vw 10vw 0; */
 	text-transform: uppercase;
