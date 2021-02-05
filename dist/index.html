@@ -4,14 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="height=100px, initial-scale=1"> -->
 	<title>Portfolio | Romain Gréaume</title>
 	<meta name="description" content="A student Developper Portfolio">
 	<meta name="keywords" content="portfolio, student, developper, locomotive scroll, horizontal scroll, layout, web design, javascript, css">
 	<meta name="author" content="Romain Gréaume">
-	<link rel="shortcut icon" href="photo_portfolio.aca87e96.png">
+	<link rel="shortcut icon" href="/photo_portfolio.aca87e96.png">
 	<link rel="stylesheet" href="https://use.typekit.net/vxy2fer.css">
-	<link rel="stylesheet" type="text/css" href="base.98fd6c19.css">
-	<link rel="stylesheet" type="text/css" href="style.78032849.css">
+	<link rel="stylesheet" type="text/css" href="/base.98fd6c19.css">
+	<link rel="stylesheet" type="text/css" href="/style.78032849.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	<script>document.documentElement.className = "js";
 
@@ -22,7 +23,7 @@ var supportsCssVars = function supportsCssVars() {
 };
 
 supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-</head>
+<script src="/base.98fd6c19.js"></script><script src="/style.78032849.js"></script></head>
 
 <body class="demo-1 loading">
 	<!-- <div class="frame">
@@ -45,17 +46,17 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 	<main data-scroll-container="">
 		<div class="content">
 			<div class="gallery">
-				
+
 				<div class="gallery__text_name">
 					<span class="gallery__text-inner_name" data-scroll="" data-scroll-speed="3" data-scroll-direction="vertical">Gréaume
 					</span>
 					<span data-scroll="" data-scroll-speed="-4" data-scroll-direction="vertical" class="gallery__text-inner_firstname">Romain
-					</span></div>
-					<div class="gallery__scroll">
-						<span class="gallery__scroll-inner">
-							Scroll
-						</span>
-					</div>
+				</span></div>
+				<div class="gallery__scroll">
+					<span class="gallery__scroll-inner">
+						Scroll
+					</span>
+				</div>
 				<!-- <div class="gallery__profil">
 				<div class="gallery__item-img-profil" style="background-image: url(img/demo1/photo_portfolio.png)">
 				</div>
@@ -64,7 +65,10 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 
 				<figure class="gallery__item-profil">
 					<div class="gallery__item-img-profil">
-						<div class="gallery__item-imginner-profil" style="background-image: url(photo_portfolio.ea304732.png)"></div>
+						<h2 class="gallery__item-title-profil-mobile">Développeur Junior</h2>
+						<div class="gallery__item-imginner-profil" style="background-image: url(/photo_portfolio.ea304732.png)">
+						</div>
+						<h2 class="gallery__item-title-profil-mobile">Web & Mobile</h2>
 					</div>
 					<figcaption class="gallery__item-caption-profil">
 						<h2 class="gallery__item-title-profil" data-scroll="" data-scroll-speed="1">Développeur Junior</h2>
@@ -75,6 +79,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 						</p>
 						<!-- <a class="gallery__item-link">explore</a> -->
 					</figcaption>
+
 				</figure>
 				<div class="gallery__text">
 					<span class="gallery__text-inner" data-scroll="" data-scroll-speed="3">Some</span>
@@ -87,7 +92,8 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 						</div>
 						<div class="gallery__content-project">
 							<h2>Website / Frontend</h2>
-							<p>Create the front-end for a website who manage multiples Cms, during my internship. Using React & MaterialUi.
+							<p>Create the front-end for a website who manage multiples Cms, during my internship. Using
+								React & MaterialUi.
 								Begin the backend with MERN Stack</p>
 						</div>
 					</div>
@@ -108,7 +114,8 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 						</div>
 						<div class="gallery__content-project">
 							<h2>Website / Frontend</h2>
-							<p>Create the frontEnd for a rent car website. School Project. Using basic Stack, Html/Css & Js (with some cool stuffs like GreenSock Library).
+							<p>Create the frontEnd for a rent car website. School Project. Using basic Stack, Html/Css &
+								Js (with some cool stuffs like GreenSock Library).
 								The backend will be done in a future project.</p>
 						</div>
 					</div>
@@ -120,7 +127,8 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 							<span data-scroll="" data-scroll-speed="1">#Css</span>
 							<span data-scroll="" data-scroll-speed="1">#Javascript</span>
 						</p>
-						<a class="gallery__item-link" href="https://appli-jenaipasdevoiture-front.vercel.app">Let's go</a>
+						<a class="gallery__item-link" href="https://appli-jenaipasdevoiture-front.vercel.app">Let's
+							go</a>
 					</figcaption>
 				</figure>
 				<figure class="gallery__item">
@@ -130,7 +138,8 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 						</div>
 						<div class="gallery__content-project">
 							<h2>Website / Frontend</h2>
-							<p>Create a Pokedex for a School Project. Using an API for Pokemon's properties. Using basic stack.</p>
+							<p>Create a Pokedex for a School Project. Using an API for Pokemon's properties. Using basic
+								stack.</p>
 						</div>
 					</div>
 					<figcaption class="gallery__item-caption">
@@ -196,8 +205,10 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 							<span></span>
 							<div class="content-stack">
 								<h2>REACT / REACT NATIVE</h2>
-								<p>Using ReactJs for website front part, and React Native for application, both with Redux.
-									Using MaterialUi, Sass, TailwindCss, sometimes Bootstrap, to facilitate workflow. </p>
+								<p>Using ReactJs for website front part, and React Native for application, both with
+									Redux.
+									Using MaterialUi, Sass, TailwindCss, sometimes Bootstrap, to facilitate workflow.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -210,7 +221,8 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 							<span></span>
 							<div class="content-stack">
 								<h2> NODE.JS / EXPRESS.JS</h2>
-								<p>Start to learn NodeJs / ExpressJs to create CRUD Restfull API too, easier than java for small projects. 
+								<p>Start to learn NodeJs / ExpressJs to create CRUD Restfull API too, easier than java
+									for small projects.
 									Using MongoDb for storage.</p>
 							</div>
 						</div>
@@ -222,7 +234,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		<circle class="cursor__inner" cx="10" cy="10" r="5"></circle>
 	</svg>
 	<!-- <script src="js/demo1/vanilla-tilt.min.js"></script> -->
-	<script src="js.00a46daa.js"></script>
+	<script src="/js.00a46daa.js"></script>
 	<!-- <script>
 		VanillaTilt.init(document.querySelector(".gallery__item-imginner"), {
 			max: 25,

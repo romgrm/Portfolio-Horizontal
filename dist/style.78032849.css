@@ -1,3 +1,17 @@
+/* - Enlever le overflow-x : hidden
+- Enlever le overflow-y : scroll 
+- Normalement là l'écran sera full 
+- Mettre bien les blocs en place 
+- Si ça marche pas regarder la height des html/body/Gallery/content etc... */
+
+.gallery__item-title-profil-mobile, .gallery__item-tags-profil-mobile{
+	display: none 
+}
+
+/* html, body{
+	height: 100vh;
+} */
+
 .gallery {
 	display: flex;
 	margin-left: 12vw;
@@ -207,22 +221,22 @@
 .gallery__item-imginner1:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("Cms_Numenor.20c40e7e.png");
+	background-image: url("/Cms_Numenor.20c40e7e.png");
 }
 .gallery__item-imginner2:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("jenaipasdevoiture.9c0dea93.png");
+	background-image: url("/jenaipasdevoiture.9c0dea93.png");
 }
 .gallery__item-imginner3:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("Pokedex.3aecef88.png");
+	background-image: url("/Pokedex.3aecef88.png");
 }
 .gallery__item-imginner4:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("Cms_Numenor.20c40e7e.png");
+	background-image: url("/Cms_Numenor.20c40e7e.png");
 }
 
 .gallery__item-caption {
@@ -579,8 +593,88 @@
 /************************************************************************************************************************************************************************************/
 /************************************************************************************************************************************************************************************/
 
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) and (orientation: portrait){
+	/******************** RESET ORIENTATION ********************/
+	html, body{
+		width: 100%;
+		height:100%; 
+	}
+	.main .content{
+		width: 100%; 
+		height: 100%; 
+	}
+	.gallery{
+		/* padding-top: 50%;  */
+		display: block; 
+		height: 100%;
+		width: 100%;
+		/* overflow-y: scroll; 
+		overflow-x: hidden; */
+	}
+
+	/******************** NAME & SCROLL ********************/
+	.gallery__text_name{
+		margin: 10vw auto 10vw auto; 
+	}
+	.gallery__text-inner_name, .gallery__text-inner_firstname {
+		padding-right: 0; 
+		text-align: center; 
+	}
+	.gallery__scroll{
+		display: none;
+	}
+
+	/******************** IMAGE ********************/
+	.gallery__item-profil{
+		grid-template-areas:'gallery-image gallery-image' 
+							'gallery-image gallery-image' 
+							'gallery-image gallery-image' ;
+		justify-content: center;					
+	}
+	.gallery__item-img-profil{
+		overflow: initial;
+	}
+	.gallery__item-imginner-profil{
+		height: 80%;
+		border-radius: 5px;
+	}
+	.gallery__item-caption-profil{
+		display: none; 
+	}
+	.gallery__item-title-profil-mobile{
+		display: flex;
+		justify-content: center;
+	}
+
+	/******************** WORKS ********************/
+	.gallery__text{
+		margin: 10vw auto 10vw auto; 
+	}
+	.gallery__text-inner{
+		padding-right: 0;
+		text-align: center;
+	}
+
+	/******************** ALL ITEMS PROJECT ********************/
+	.gallery__item{
+		justify-content: center;
+		padding-top: 5px;
+	}
+	.gallery__item:nth-child(even) {
+		padding-top: 0;
+		padding-top: 5px;
+	}
+	/* .gallery__item:nth-child() {
+		padding-top: 5px;
+	} */
+	
 	/******************** STACK ********************/
+	.gallery__item-stack{
+		justify-content: center;
+		grid-template-areas: '... ...'
+							'gallery-image gallery-image'
+							'... ...';
+	}
 	.gallery__square{
 		width: 250px;
 		height: 100%;
@@ -644,3 +738,5 @@
 	}
 	
 }
+
+/*# sourceMappingURL=/style.78032849.css.map */
