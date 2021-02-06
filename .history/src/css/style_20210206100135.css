@@ -228,22 +228,22 @@
 .gallery__item-imginner1:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Cms_Numenor.20c40e7e.png");
+	background-image: url("../img/Projects/Cms_Numenor.png");
 }
 .gallery__item-imginner2:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/jenaipasdevoiture.9c0dea93.png");
+	background-image: url("../img/Projects/jenaipasdevoiture.png");
 }
 .gallery__item-imginner3:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Pokedex.3aecef88.png");
+	background-image: url("../img/Projects/Pokedex.png");
 }
 .gallery__item-imginner4:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Cms_Numenor.20c40e7e.png");
+	background-image: url("../img/Projects/Cms_Numenor.png");
 }
 
 .gallery__item-caption {
@@ -387,12 +387,12 @@
 	/* margin-top: 20px; */
 	/* text-transform: uppercase; */
 }
-/* .gallery__text-inner_job{
+.gallery__text-inner_job{
 	display: block; 
 	margin-top: 100px;
 	font-size: 100px;
 	text-transform: lowercase;
-} */
+}
 
 /******************************** WORKS ***************************************/
 
@@ -579,14 +579,8 @@
 /************************************************************************************************************************************************************************************/
 
 @media all and (max-width: 1440px){
-	.gallery{
-		margin-left: 0;
-	}
 	.gallery__text_name{
-		margin: 7vw 0 10vw 0; 
-	}
-	.gallery__content-project{
-		height:80%; 
+		margin: 7vw 5vw 10vw 0; 
 	}
 }
 
@@ -604,12 +598,9 @@
 	.gallery__item-stack {
 		margin: 0 10vw;
 	}
-	 /************** CONTENT PROJECT ***************/
-	/* .gallery__item-img:hover  .gallery__content-project {
+	/* ************** CONTENT PROJECT ***************
+	.gallery__item-img:hover  .gallery__content-project {
 		bottom: 50px; 
-	} */
-	.gallery__content-project{
-		height:100%; 
 	}
 	.gallery__content-project h2{
 		font-size: 18px;
@@ -649,8 +640,6 @@
 		display: block; 
 		height: 100%;
 		width: 100%;
-		margin: 0 auto;
-		padding: 0; 
 		/* overflow-y: scroll; 
 		overflow-x: hidden; */
 	}
@@ -701,11 +690,8 @@
 	.gallery__item-img:hover{
 		transform: translateY(-10px);
 	}
-	.gallery__content-project{
-		height:100%; 
-	}
 	.gallery__content-project h2{
-		font-size: 10px;
+		font-size: 7px;
 	}
 	.gallery__content-project p{
 		 font-size: 8px;
@@ -799,5 +785,3 @@
 	}
 	
 }
-
-/*# sourceMappingURL=/style.78032849.css.map */

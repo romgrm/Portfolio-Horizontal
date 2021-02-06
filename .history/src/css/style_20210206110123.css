@@ -228,22 +228,22 @@
 .gallery__item-imginner1:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Cms_Numenor.20c40e7e.png");
+	background-image: url("../img/Projects/Cms_Numenor.png");
 }
 .gallery__item-imginner2:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/jenaipasdevoiture.9c0dea93.png");
+	background-image: url("../img/Projects/jenaipasdevoiture.png");
 }
 .gallery__item-imginner3:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Pokedex.3aecef88.png");
+	background-image: url("../img/Projects/Pokedex.png");
 }
 .gallery__item-imginner4:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Cms_Numenor.20c40e7e.png");
+	background-image: url("../img/Projects/Cms_Numenor.png");
 }
 
 .gallery__item-caption {
@@ -649,8 +649,7 @@
 		display: block; 
 		height: 100%;
 		width: 100%;
-		margin: 0 auto;
-		padding: 0; 
+		margin: auto;
 		/* overflow-y: scroll; 
 		overflow-x: hidden; */
 	}
@@ -799,5 +798,3 @@
 	}
 	
 }
-
-/*# sourceMappingURL=/style.78032849.css.map */
