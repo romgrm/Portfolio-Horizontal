@@ -7,8 +7,8 @@ import { lerp, getMousePos } from './utils';
 //     window.addEventListener('mousemove', ev => mouse = getMousePos(ev));
     
 // }
-let mouse = { x: 0, y: 0 };
-window.addEventListener('mousemove', ev => mouse = getMousePos(ev));
+// let mouse = { x: 0, y: 0 };
+// window.addEventListener('mousemove', ev => mouse = getMousePos(ev));
 
 
 

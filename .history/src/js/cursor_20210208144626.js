@@ -2,11 +2,6 @@ import { gsap } from 'gsap';
 import { lerp, getMousePos } from './utils';
 
 // Track the mouse position
-// if(window.innerWidth > 768) {
-//     let mouse = { x: 0, y: 0 };
-//     window.addEventListener('mousemove', ev => mouse = getMousePos(ev));
-    
-// }
 let mouse = { x: 0, y: 0 };
 window.addEventListener('mousemove', ev => mouse = getMousePos(ev));
 
