@@ -743,20 +743,20 @@
 	/******************** ALL ITEMS PROJECT ********************/
 	.gallery__item{
 		justify-content: center;
-		padding-top: 55px;
+		padding-top: 30px;
 		grid-template-rows: 2rem 28vmax 3rem;
 		/* margin-right: 30px;  */
 	}
 	.gallery__item:nth-child(even) {
 		padding-top: 0;
-		padding-top: 55px;
+		padding-top: 30px;
 	}
 	.gallery__item-title{
 		font-size: 3em; 
 		line-height: 0;
 	}
 	.gallery__item-tags{
-		font-size: 2.5em;
+		font-size: 2em;
 		margin-top: 30px;
 	}
 	
@@ -814,7 +814,14 @@
 		margin-right: 20px;
 		margin-left: 20px;
 	} */
-	
+	html, body{
+		width: 100%;
+		height:100%; 
+	}
+	main, .content{
+		width: 100%; 
+		height: 100%; 
+	}
 	.gallery{
 		/* padding-top: 50%;  */
 		display: block; 
@@ -889,13 +896,13 @@
 	/******************** ALL ITEMS PROJECT ********************/
 	.gallery__item{
 		justify-content: center;
-		padding-top: 35px;
+		padding-top: 250px;
 		grid-template-rows: 2rem 28vmax 3rem;
 		/* margin-right: 30px;  */
 	}
 	.gallery__item:nth-child(even) {
 		padding-top: 0;
-		padding-top: 35px;
+		padding-top: 25px;
 	}
 	/* .gallery__item:nth-child() {
 		padding-top: 5px;

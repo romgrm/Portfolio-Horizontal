@@ -10,6 +10,10 @@
 - checker margin/padding body, gallery etc 
 
 */
+@viewport { 
+    width: device-width; 
+    zoom: 1; 
+}
 
 .gallery__item-title-profil-mobile, .gallery__item-tags-profil-mobile{
 	display: none 
@@ -739,20 +743,20 @@
 	/******************** ALL ITEMS PROJECT ********************/
 	.gallery__item{
 		justify-content: center;
-		padding-top: 30px;
+		padding-top: 55px;
 		grid-template-rows: 2rem 28vmax 3rem;
 		/* margin-right: 30px;  */
 	}
 	.gallery__item:nth-child(even) {
 		padding-top: 0;
-		padding-top: 30px;
+		padding-top: 55px;
 	}
 	.gallery__item-title{
 		font-size: 3em; 
 		line-height: 0;
 	}
 	.gallery__item-tags{
-		font-size: 2em;
+		font-size: 2.5em;
 		margin-top: 30px;
 	}
 	
@@ -810,14 +814,7 @@
 		margin-right: 20px;
 		margin-left: 20px;
 	} */
-	html, body{
-		width: 100%;
-		height:100%; 
-	}
-	main, .content{
-		width: 100%; 
-		height: 100%; 
-	}
+	
 	.gallery{
 		/* padding-top: 50%;  */
 		display: block; 
@@ -883,22 +880,22 @@
 		padding-top: 70px;
 	}
 	.gallery__content-project h2{
-		font-size: 10px;
+		font-size: 2em;
 	}
 	.gallery__content-project p{
-		 font-size: 8px;
+		 font-size: 1em;
 	}
 
 	/******************** ALL ITEMS PROJECT ********************/
 	.gallery__item{
 		justify-content: center;
-		padding-top: 15px;
+		padding-top: 35px;
 		grid-template-rows: 2rem 28vmax 3rem;
 		/* margin-right: 30px;  */
 	}
 	.gallery__item:nth-child(even) {
 		padding-top: 0;
-		padding-top: 15px;
+		padding-top: 35px;
 	}
 	/* .gallery__item:nth-child() {
 		padding-top: 5px;
@@ -908,10 +905,7 @@
 		margin-top: 20px;
 	}
 	.gallery__item-title{
-		font-size: 1.5em; 
-	}
-	.gallery__item-tags{
-		font-size: 1em; 
+		font-size: 2em; 
 	}
 	
 	/******************** STACK ********************/
@@ -943,10 +937,10 @@
 	/*********************** APPBAR ***********************/
 	.frame{ 
 		padding: 3rem 5vw;
-	text-align: center;
-	position: relative;
-	z-index: 1000;
-	text-transform: uppercase;
+		text-align: center;
+		position: relative;
+		z-index: 1000;
+		text-transform: uppercase;
 	}
 	.frame__links{
 		display: inline; 
