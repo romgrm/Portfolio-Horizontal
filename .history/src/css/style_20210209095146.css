@@ -641,17 +641,6 @@
 /************************************************************************************************************************************************************************************/
 
 @media all and (max-width: 1024px){
-	html, body{
-		width: 100%;
-		height:100%; 
-	}
-	main, .content{
-		width: 100%; 
-		height: 100%; 
-	}
-	.cursor{
-		display: none; 
-	}
 	.content{
 		height:100vh;
 		justify-content: center;
@@ -664,17 +653,18 @@
 	.gallery__item-stack {
 		margin: 0 10vw;
 	}
-	/******************** NAME & SCROLL ********************/
-	.gallery__text_name{
-		margin: 10vw auto 10vw auto; 
-		line-height: 80%;
+	 /************** CONTENT PROJECT ***************/
+	/* .gallery__item-img:hover  .gallery__content-project {
+		bottom: 50px; 
+	} */
+	.gallery__content-project{
+		height:100%; 
 	}
-	.gallery__text-inner_name, .gallery__text-inner_firstname {
-		padding-right: 0; 
-		text-align: center; 
+	.gallery__content-project h2{
+		font-size: 18px;
 	}
-	.gallery__scroll{
-		display: none;
+	.gallery__content-project p{
+		 font-size: 14px;
 	}
 	/******************** STACK ********************/
 	/* .gallery__square{
@@ -685,114 +675,11 @@
 		width: 300px;
 		height: 300px; 
 	} */ 
+	.gallery__text_name{
+		line-height: 80%;
+	}
 	body{
-		margin-left: 50px; 
-		padding-right: 50px;
-		background-color:purple; 
-	}
-	/******************** IMAGE ********************/
-	.gallery__item-profil{
-		grid-template-areas:'gallery-image gallery-image' 
-							'gallery-image gallery-image' 
-							'gallery-image gallery-image' ;
-		justify-content: center;
-		margin-bottom: 200px;					
-	}
-	.gallery__item-img-profil{
-		overflow: initial;
-	}
-	.gallery__item-imginner-profil{
-		height: 80%;
-		border-radius: 5px;
-	}
-	.gallery__item-caption-profil{
-		display: none; 
-	}
-	.gallery__item-title-profil-mobile{
-		display: flex;
-		justify-content: center;
-		font-size: 50px;
-	}
-
-	/******************** WORKS ********************/
-	.gallery__text{
-		margin: 10vw auto 10vw auto; 
-	}
-	.gallery__text-inner{
-		padding-right: 0;
-		text-align: center;
-	}
-	/*************** CONTENT PROJECT ****************/
-	.gallery__item-img:hover{
-		transform: none;
-	}
-	.gallery__content-project{
-		height:90%; 
-	}
-	.gallery__content-project h2{
-		font-size: 3em;
-	}
-	.gallery__content-project p{
-		 font-size: 2em;
-	}
-
-	/******************** ALL ITEMS PROJECT ********************/
-	.gallery__item{
-		justify-content: center;
-		padding-top: 30px;
-		grid-template-rows: 2rem 28vmax 3rem;
-		/* margin-right: 30px;  */
-	}
-	.gallery__item:nth-child(even) {
-		padding-top: 0;
-		padding-top: 30px;
-	}
-	.gallery__item-title{
-		font-size: 3em; 
-		line-height: 0;
-	}
-	.gallery__item-tags{
-		font-size: 2em;
-		margin-top: 30px;
-	}
-	
-	/******************** STACK ********************/
-	.gallery__item-stack{
-		justify-content: center;
-		grid-template-areas: '... ...'
-							'gallery-image gallery-image'
-							'... ...';
-	}
-	.gallery__square{
-		width: 450px;
-		height: 100%;
-	}
-	.square{
-		width: 450px;
-		height: 450px; 
-	}
-	.content-stack-h2{
-		font-size: 30px;
-	}
-	.content-stack-p{
-		font-size:20px; 
-	}
-
-	/*********************** APPBAR ***********************/
-	.frame{ 
-		display: flex;
-		justify-content: center;
-		position: relative;
-		padding: 0;
-		margin-top: 1vh;
-		margin-bottom: 0;
-	}
-	.frame__links a{
-		color: green;
-		font-size: 2em;
-	}
-	.frame__links a:not(:last-child){
-		margin-right: 2rem;
+		background-color:green; 
 	}
 }
 

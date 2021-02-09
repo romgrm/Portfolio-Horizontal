@@ -783,13 +783,10 @@
 		display: flex;
 		justify-content: center;
 		position: relative;
-		padding: 0;
-		margin-top: 1vh;
-		margin-bottom: 0;
 	}
 	.frame__links a{
 		color: green;
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.frame__links a:not(:last-child){
 		margin-right: 2rem;

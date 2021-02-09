@@ -695,8 +695,7 @@
 		grid-template-areas:'gallery-image gallery-image' 
 							'gallery-image gallery-image' 
 							'gallery-image gallery-image' ;
-		justify-content: center;
-		margin-bottom: 200px;					
+		justify-content: center;					
 	}
 	.gallery__item-img-profil{
 		overflow: initial;
@@ -731,6 +730,7 @@
 	}
 	.gallery__content-project h2{
 		font-size: 3em;
+		line-height: 0;
 	}
 	.gallery__content-project p{
 		 font-size: 2em;
@@ -749,7 +749,8 @@
 	}
 	.gallery__item-title{
 		font-size: 3em; 
-		line-height: 0;
+		color: red; 
+		 
 	}
 	.gallery__item-tags{
 		font-size: 2em;
@@ -776,23 +777,6 @@
 	}
 	.content-stack-p{
 		font-size:20px; 
-	}
-
-	/*********************** APPBAR ***********************/
-	.frame{ 
-		display: flex;
-		justify-content: center;
-		position: relative;
-		padding: 0;
-		margin-top: 1vh;
-		margin-bottom: 0;
-	}
-	.frame__links a{
-		color: green;
-		font-size: 2em;
-	}
-	.frame__links a:not(:last-child){
-		margin-right: 2rem;
 	}
 }
 
