@@ -32,7 +32,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+/* .dark-mode{
+	background-color: black; 
+	
+} */
 /* Page Loader */
 .js .loading::before,
 .js .loading::after {
@@ -254,3 +257,5 @@ html.has-scroll-smooth {
 	[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
 	  right: auto;
 	  bottom: 0; }
+
+/*# sourceMappingURL=/base.98fd6c19.css.map */

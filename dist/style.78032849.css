@@ -10,6 +10,7 @@
 - checker margin/padding body, gallery etc 
 
 */
+
 @viewport { 
     width: device-width; 
     zoom: 1; 
@@ -232,22 +233,25 @@
 .gallery__item-imginner1:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("Cms_Numenor.20c40e7e.png");
+	background-image: url("/Cms_Numenor.20c40e7e.png");
+}
+.gallery__item-imginner1:hover p, .gallery__item-imginner2:hover p, .gallery__item-imginner3:hover p, .gallery__item-imginner4:hover p{
+	display: none; 
 }
 .gallery__item-imginner2:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("jenaipasdevoiture.9c0dea93.png");
+	background-image: url("/jenaipasdevoiture.9c0dea93.png");
 }
 .gallery__item-imginner3:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("Pokedex.3aecef88.png");
+	background-image: url("/Pokedex.3aecef88.png");
 }
 .gallery__item-imginner4:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("Cms_Numenor.20c40e7e.png");
+	background-image: url("/Cms_Numenor.20c40e7e.png");
 }
 
 .gallery__item-caption {
@@ -1034,3 +1038,53 @@
 		/* background-color: rosybrown;  */
 	}
 }
+
+
+/************************************************************************************************************************************************************************************/
+/************************************************************************************************************************************************************************************/
+/*********************************************************************************** DARK MODE **************************************************************************************/
+/************************************************************************************************************************************************************************************/
+/************************************************************************************************************************************************************************************/
+
+
+body.dark{
+	background-color: black;
+}	
+.gallery__content-project h2.dark{
+	color: white; 
+}
+.gallery__content-project p.dark{
+	color: white; 
+} 
+.gallery__item-imginner1.dark{
+	background-color: white; 
+	color: black; 
+}
+.gallery__item-imginner2.dark{
+	background-color: white; 
+	color: black; 
+}
+.gallery__item-imginner3.dark{
+	background-color: white; 
+	color: black; 
+}
+.gallery__item-imginner4.dark{
+	background-color: white; 
+	color: black; 
+}
+.square span:nth-child(1).dark{
+	background: white; 
+}
+.square span:nth-child(2).dark{
+	background: white; 
+}
+.square span:nth-child(3).dark{
+	background: white; 
+}
+/* .square:hover span:nth-child(1).dark{
+	background: rgba(255, 255, 255, 0.8);
+} */
+
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
