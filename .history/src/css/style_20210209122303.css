@@ -880,7 +880,6 @@
 	}
 	.gallery__content-project{
 		height:100%; 
-		padding-top: 70px;
 	}
 	.gallery__content-project h2{
 		font-size: 10px;
@@ -978,15 +977,6 @@
 	/*************** CONTENT PROJECT ****************/
 	.gallery__item-img:hover{
 		transform: translateY(-10px);
-	}
-	.gallery__item-title{
-		line-height: 1.5;
-	}
-	.gallery__content-project{
-		/* height: 60%; */
-		/* bottom: -50%;  */
-		/* padding: 20px;  */
-		padding-top: 50px;
 	}
 	.gallery__content-project h2{
 		font-size: 12px;

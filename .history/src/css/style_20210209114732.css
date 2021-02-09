@@ -788,6 +788,7 @@
 		margin-bottom: 0;
 	}
 	.frame__links a{
+		color: green;
 		font-size: 2em;
 	}
 	.frame__links a:not(:last-child){
@@ -847,8 +848,7 @@
 		grid-template-areas:'gallery-image gallery-image' 
 							'gallery-image gallery-image' 
 							'gallery-image gallery-image' ;
-		justify-content: center;	
-		margin-bottom: 50px;				
+		justify-content: center;					
 	}
 	.gallery__item-img-profil{
 		overflow: initial;
@@ -863,7 +863,6 @@
 	.gallery__item-title-profil-mobile{
 		display: flex;
 		justify-content: center;
-		font-size: 20px;
 	}
 
 	/******************** WORKS ********************/
@@ -880,7 +879,6 @@
 	}
 	.gallery__content-project{
 		height:100%; 
-		padding-top: 70px;
 	}
 	.gallery__content-project h2{
 		font-size: 10px;
@@ -892,13 +890,13 @@
 	/******************** ALL ITEMS PROJECT ********************/
 	.gallery__item{
 		justify-content: center;
-		padding-top: 15px;
+		padding-top: 5px;
 		grid-template-rows: 2rem 28vmax 3rem;
 		/* margin-right: 30px;  */
 	}
 	.gallery__item:nth-child(even) {
 		padding-top: 0;
-		padding-top: 15px;
+		padding-top: 5px;
 	}
 	/* .gallery__item:nth-child() {
 		padding-top: 5px;
@@ -906,12 +904,6 @@
 	.gallery__item-tags{
 		font-size: 1.5em;
 		margin-top: 20px;
-	}
-	.gallery__item-title{
-		font-size: 1.5em; 
-	}
-	.gallery__item-tags{
-		font-size: 1em; 
 	}
 	
 	/******************** STACK ********************/
@@ -929,12 +921,6 @@
 		width: 250px;
 		height: 250px; 
 	}
-	.content-stack-h2{
-		font-size: 15px;
-	}
-	.content-stack-p{
-		font-size:10px; 
-	}
 	body{
 		margin-left: 50px; 
 		padding-right: 50px;
@@ -948,11 +934,8 @@
 	z-index: 1000;
 	text-transform: uppercase;
 	}
-	.frame__links{
-		display: inline; 
-	}
 	.frame__links a{
-		font-size: 1em;
+		font-size: 2em;
 	}
 	.frame__links a:not(:last-child){
 		margin-right: 1rem;
@@ -978,15 +961,6 @@
 	/*************** CONTENT PROJECT ****************/
 	.gallery__item-img:hover{
 		transform: translateY(-10px);
-	}
-	.gallery__item-title{
-		line-height: 1.5;
-	}
-	.gallery__content-project{
-		/* height: 60%; */
-		/* bottom: -50%;  */
-		/* padding: 20px;  */
-		padding-top: 50px;
 	}
 	.gallery__content-project h2{
 		font-size: 12px;
