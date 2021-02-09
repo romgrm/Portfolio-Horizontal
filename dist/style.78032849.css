@@ -576,8 +576,23 @@
 	.gallery__text_name{
 		margin: 0 5vw 0 0; 
 	}
-	body{
+	/* body{
 		background-color:red; 
+	} */
+	/*********************** APPBAR ***********************/
+	/* .frame{ 
+		display: flex;
+		justify-content: center;
+		position: relative;
+		padding: 0;
+		margin-top: 1vh;
+		margin-bottom: 0;
+	} */
+	.frame__links a{
+		font-size: 1.5em;
+	}
+	.frame__links a:not(:last-child){
+		margin-right: 2rem;
 	}
 }
 
@@ -590,7 +605,7 @@
 
 @media all and (max-width: 1919px){
 	body{
-		background-color: blue;
+		/* background-color: blue; */
 	}
 	.content{
 		height: 100vh;
@@ -692,7 +707,7 @@
 	body{
 		margin-left: 50px; 
 		padding-right: 50px;
-		background-color:purple; 
+		/* background-color:purple;  */
 	}
 	/******************** IMAGE ********************/
 	.gallery__item-profil{
@@ -932,7 +947,7 @@
 	body{
 		margin-left: 50px; 
 		padding-right: 50px;
-		background-color: green; 
+		/* background-color: green;  */
 	}
 	/*********************** APPBAR ***********************/
 	.frame{ 
@@ -1016,6 +1031,6 @@
 	body{
 		margin-left: 50px; 
 		padding-right: 50px;
-		background-color: rosybrown; 
+		/* background-color: rosybrown;  */
 	}
 }
