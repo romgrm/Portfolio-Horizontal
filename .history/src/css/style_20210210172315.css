@@ -184,7 +184,7 @@
 .gallery__item-imginner4:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	/* background-image: url("../img/Projects/Cms_Numenor.png"); */
+	background-image: url("../img/Projects/Cms_Numenor.png");
 }
 .gallery__item-caption {
 	grid-area: 1 / 1 / 4 / 3;
@@ -212,23 +212,6 @@
 	color: var(--color-gallery-title);
 }
 .gallery__item-link {
-	grid-area: gallery-link;
-	align-self: end;
-	font-size: 1.5rem;
-	background: var(--color-gallery-link-bg);
-	color: var(--color-gallery-link);
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	text-decoration: none; 
-}
-.gallery__item-link-disabled {
-	pointer-events: none;
 	grid-area: gallery-link;
 	align-self: end;
 	font-size: 1.5rem;
@@ -528,10 +511,11 @@
 		display: none;
 	}
 	/******************** STACK ********************/
-
+	
 	body{
 		margin-left: 50px; 
 		padding-right: 50px;
+		/* background-color:purple;  */
 	}
 	/******************** IMAGE ********************/
 	.gallery__item-profil{
@@ -558,7 +542,6 @@
 	}
 
 	/******************** WORKS ********************/
-
 	.gallery__text{
 		margin: 10vw auto 10vw auto; 
 	}
@@ -566,9 +549,7 @@
 		padding-right: 0;
 		text-align: center;
 	}
-
 	/*************** CONTENT PROJECT ****************/
-
 	.gallery__item-img:hover{
 		transform: none;
 	}
@@ -583,11 +564,11 @@
 	}
 
 	/******************** ALL ITEMS PROJECT ********************/
-
 	.gallery__item{
 		justify-content: center;
 		padding-top: 55px;
 		grid-template-rows: 2rem 28vmax 3rem;
+		/* margin-right: 30px;  */
 	}
 	.gallery__item:nth-child(even) {
 		padding-top: 0;
@@ -603,7 +584,6 @@
 	}
 	
 	/******************** STACK ********************/
-
 	.gallery__item-stack{
 		justify-content: center;
 		grid-template-areas: '... ...'
@@ -626,7 +606,6 @@
 	}
 
 	/*********************** APPBAR ***********************/
-
 	.frame{ 
 		display: flex;
 		justify-content: center;
@@ -650,21 +629,28 @@
 /************************************************************************************************************************************************************************************/
 
 @media all and (max-width: 768px) {
-	
 	.cursor{
 		display: none; 
 	}
-
 	/******************** RESET ORIENTATION ********************/
+	/* main{
+		margin-right: 20px;
+		margin-left: 20px;
+	} */
 	
 	.gallery{
+		/* padding-top: 50%;  */
 		display: block; 
 		height: 100%;
 		width: 100%;
+		/* margin: 0 auto; */
+		/* padding: 0 20vw;  */
+		
+		/* overflow-y: scroll; 
+		overflow-x: hidden; */
 	}
 
 	/******************** NAME & SCROLL ********************/
-
 	.gallery__text_name{
 		margin: 10vw auto 10vw auto; 
 	}
@@ -677,7 +663,6 @@
 	}
 
 	/******************** IMAGE ********************/
-
 	.gallery__item-profil{
 		grid-template-areas:'gallery-image gallery-image' 
 							'gallery-image gallery-image' 
@@ -702,7 +687,6 @@
 	}
 
 	/******************** WORKS ********************/
-
 	.gallery__text{
 		margin: 10vw auto 10vw auto; 
 	}
@@ -710,9 +694,7 @@
 		padding-right: 0;
 		text-align: center;
 	}
-
 	/*************** CONTENT PROJECT ****************/
-
 	.gallery__item-img:hover{
 		transform: translateY(-10px);
 	}
@@ -728,16 +710,19 @@
 	}
 
 	/******************** ALL ITEMS PROJECT ********************/
-
 	.gallery__item{
 		justify-content: center;
 		padding-top: 35px;
 		grid-template-rows: 2rem 28vmax 3rem;
+		/* margin-right: 30px;  */
 	}
 	.gallery__item:nth-child(even) {
 		padding-top: 0;
 		padding-top: 35px;
 	}
+	/* .gallery__item:nth-child() {
+		padding-top: 5px;
+	} */
 	.gallery__item-tags{
 		font-size: 1.5em;
 		margin-top: 20px;
@@ -747,7 +732,6 @@
 	}
 	
 	/******************** STACK ********************/
-
 	.gallery__item-stack{
 		justify-content: center;
 		grid-template-areas: '... ...'
@@ -771,10 +755,9 @@
 	body{
 		margin-left: 50px; 
 		padding-right: 50px;
+		/* background-color: green;  */
 	}
-
 	/*********************** APPBAR ***********************/
-
 	.frame{ 
 		padding: 3rem 5vw;
 		text-align: center;
@@ -800,9 +783,7 @@
 /************************************************************************************************************************************************************************************/
 
 @media all and (max-width: 360px){
-
 	/************* PROFIL *****************/
-
 	.gallery__item-title-profil {
 		font-size: 2rem;
 	}
@@ -811,9 +792,7 @@
 		font-size: 2rem;
 		font-weight: normal;
 	}
-
 	/*************** CONTENT PROJECT ****************/
-
 	.gallery__item-img:hover{
 		transform: translateY(-10px);
 	}
@@ -821,6 +800,9 @@
 		line-height: 1.5;
 	}
 	.gallery__content-project{
+		/* height: 60%; */
+		/* bottom: -50%;  */
+		/* padding: 20px;  */
 		padding-top: 50px;
 	}
 	.gallery__content-project h2{
@@ -831,20 +813,17 @@
 	}
 
 	/****************** TAGS ******************/
-
 	.gallery__item-tags {
 		font-size: 1.5rem;
 		margin-top: 10px;
 	}
 
 	/*************** GALLERY ****************/
-
 	.gallery__item {
 		grid-template-rows: 3rem 28vmax 3rem;
 	}
 
 	/******************** STACK ********************/
-
 	.gallery__item-stack {
 		margin: 0 5vw;
 	}
@@ -860,14 +839,17 @@
 	body{
 		margin-left: 50px; 
 		padding-right: 50px;
+		/* background-color: rosybrown;  */
 	}
 }
+
 
 /************************************************************************************************************************************************************************************/
 /************************************************************************************************************************************************************************************/
 /*********************************************************************************** DARK MODE **************************************************************************************/
 /************************************************************************************************************************************************************************************/
 /************************************************************************************************************************************************************************************/
+
 
 body.dark{
 	background-color: black;
@@ -910,10 +892,6 @@ body.dark{
 	color: #000; 
 }
 .gallery__item-link.dark{
-	background-color: white;
-	color: black;  
-}
-.gallery__item-link-disabled.dark{
 	background-color: white;
 	color: black;  
 }

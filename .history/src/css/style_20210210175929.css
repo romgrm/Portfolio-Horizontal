@@ -184,7 +184,7 @@
 .gallery__item-imginner4:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	/* background-image: url("../img/Projects/Cms_Numenor.png"); */
+	background-image: url("../img/Projects/Cms_Numenor.png");
 }
 .gallery__item-caption {
 	grid-area: 1 / 1 / 4 / 3;

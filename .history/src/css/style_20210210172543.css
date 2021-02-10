@@ -184,7 +184,7 @@
 .gallery__item-imginner4:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	/* background-image: url("../img/Projects/Cms_Numenor.png"); */
+	background-image: url("../img/Projects/Cms_Numenor.png");
 }
 .gallery__item-caption {
 	grid-area: 1 / 1 / 4 / 3;
@@ -212,23 +212,6 @@
 	color: var(--color-gallery-title);
 }
 .gallery__item-link {
-	grid-area: gallery-link;
-	align-self: end;
-	font-size: 1.5rem;
-	background: var(--color-gallery-link-bg);
-	color: var(--color-gallery-link);
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	text-decoration: none; 
-}
-.gallery__item-link-disabled {
-	pointer-events: none;
 	grid-area: gallery-link;
 	align-self: end;
 	font-size: 1.5rem;
@@ -910,10 +893,6 @@ body.dark{
 	color: #000; 
 }
 .gallery__item-link.dark{
-	background-color: white;
-	color: black;  
-}
-.gallery__item-link-disabled.dark{
 	background-color: white;
 	color: black;  
 }

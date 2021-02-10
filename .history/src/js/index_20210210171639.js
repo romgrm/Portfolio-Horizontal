@@ -2,7 +2,7 @@ import { preloadImages, preloadFonts, clamp, map } from './utils';
 import Cursor from './cursor';
 import LocomotiveScroll from 'locomotive-scroll';
 
-// PRELOAD 
+// document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
 
 Promise.all([preloadImages('.gallery__item-imginner'), preloadFonts('vxy2fer')]).then(() => {
     // Remove loader (loading class)
@@ -61,7 +61,6 @@ button.addEventListener('click', () => {
     document.querySelector('.gallery__item-imginner2').classList.toggle('dark')
     document.querySelector('.gallery__item-imginner3').classList.toggle('dark')
     document.querySelector('.gallery__item-imginner4').classList.toggle('dark')
-    document.querySelector('.gallery__item-link-disabled').classList.toggle('dark')
     document.querySelectorAll('.gallery__content-project h2').forEach(elem => {
         elem.classList.toggle('dark')
     })
@@ -93,7 +92,7 @@ button.addEventListener('click', () => {
     
     localStorage.setItem("dark", "1");
 })
-// STORAGE
+// Storage
 // Set user theme
 const userTheme = localStorage.getItem("dark");
 if (userTheme) {

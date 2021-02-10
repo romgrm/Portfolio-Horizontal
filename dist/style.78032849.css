@@ -1,56 +1,29 @@
-/* - Enlever le overflow-x : hidden
-- Enlever le overflow-y : scroll 
-- Normalement là l'écran sera full 
-- Mettre bien les blocs en place 
-- Si ça marche pas regarder la height des html/body/Gallery/content etc... */
-
-
-/*
-- Réduire taille tags 
-- checker margin/padding body, gallery etc 
-
-*/
 
 @viewport { 
     width: device-width; 
     zoom: 1; 
 }
-
+/********************************** BASE ****************************/
 .gallery__item-title-profil-mobile, .gallery__item-tags-profil-mobile{
 	display: none 
 }
-
-/* html, body{
-	height: 100vh;
-} */
-
 .gallery {
 	display: flex;
 	margin-left: 12vw;
 	padding-right: 12vw;
 }
-
 .gallery__scroll{
-	 /* background: red;  */
-	/*height: 8vh;
-	width: 10vw; */
-	/* position: absolute;
-	left: 50%; */
 	display: flex;
 	align-items: center; 
-	justify-content: center;
-	/* bottom: 0; 
-	display: flex;*/  
+	justify-content: center; 
 	padding: 0;
-	margin: 0; 
-	
+	margin: 0; 	
 }
 .gallery__scroll-inner{
 	font-family: halyard-display;
 	font-size: 4em;
 	color:var(--color-gallery-title)
 }
-
 .gallery__item {
 	margin: 0 3vw;
 	display: grid;
@@ -61,18 +34,11 @@
 	grid-template-rows: 8rem 28vmax 3rem;
 	will-change: transform;
 }
-
-
 .gallery__item:nth-child(even) {
 	padding-top: 10vh;
 }
 
-
-
-
-
 /************************* PROFIL PICTURE  **************************/
-
 
 .gallery__item-profil {
 	margin: 0 3vw;
@@ -84,8 +50,6 @@
 	grid-template-rows: 8rem 28vmax 3rem;
 	will-change: transform;
 }
-
-
 .gallery__item-img-profil {
 	grid-area: gallery-image;
 	width: 100%;
@@ -97,7 +61,6 @@
 	transition: 0.5s;
 	will-change: transform;
 }
-
 .gallery__item-imginner-profil {
 	background-size: cover;
     background-position: 50% 0;
@@ -105,7 +68,6 @@
 	height: 100%;
 	will-change: transform;
 }
-
 .gallery__item-caption-profil {
 	grid-area: 1 / 1 / 4 / 3;
 	display: grid;
@@ -115,7 +77,6 @@
 	grid-template-columns: 8rem auto;
 	grid-template-rows: 8rem auto 3rem;
 }
-
 .gallery__item-title-profil {
 	grid-area: gallery-title;
 	margin: 0;
@@ -124,7 +85,6 @@
 	color: var(--color-gallery-title);
 	justify-self: center; 
 }
-
 .gallery__item-tags-profil {
 	grid-area: gallery-tags;
 	margin-top: 100px; 
@@ -132,20 +92,13 @@
 	font-size: 3rem;
 	display: grid;
 	grid-auto-flow: column;
-	/* grid-gap: -10rem; */
 	cursor: pointer;
 	color: var(--color-gallery-title); 
-	/* font-family: moret, serif; */
 	font-weight: 800;
-	/* font-style: italic; */
 	align-self: center;
 }
 
-
-/****************************************************/
-
-
-
+/********************** IMG ******************************/
 
 .gallery__item-img {
 	grid-area: gallery-image;
@@ -158,24 +111,10 @@
 	transition: 0.5s;
 	will-change: transform;
 }
-
 .gallery__item-img:hover{
 	transform: translateY(-30px);
-	/* box-shadow: 0 20px 20px rgba(0,0,0,.2); */
 }
 
-/* .gallery__item-imginner {
-	background-size: cover ;
-    background-position: 50% 50%;
-    width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center; 
-	justify-content: center;
-	background-color: black; 
-	color: #fff; 
-	font-size: 5em; 
-} */
 .gallery__item-imginner1 {
 	background-size: cover ;
     background-position: 50% 50%;
@@ -224,16 +163,10 @@
 	color: #fff; 
 	font-size: 5em; 
 }
-
-/* .gallery__item-imginner:hover{
-	opacity: .5; 
-	filter: blur(0.2rem);
-	background-image: url("../img/Projects/Cms_Numenor.png");
-} */
 .gallery__item-imginner1:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("Cms_Numenor.20c40e7e.png");
+	background-image: url("/Cms_Numenor.20c40e7e.png");
 }
 .gallery__item-imginner1:hover p, .gallery__item-imginner2:hover p, .gallery__item-imginner3:hover p, .gallery__item-imginner4:hover p{
 	display: none; 
@@ -241,19 +174,18 @@
 .gallery__item-imginner2:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("jenaipasdevoiture.9c0dea93.png");
+	background-image: url("/jenaipasdevoiture.9c0dea93.png");
 }
 .gallery__item-imginner3:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("Pokedex.3aecef88.png");
+	background-image: url("/Pokedex.3aecef88.png");
 }
 .gallery__item-imginner4:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("Cms_Numenor.20c40e7e.png");
+	/* background-image: url("../img/Projects/Cms_Numenor.png"); */
 }
-
 .gallery__item-caption {
 	grid-area: 1 / 1 / 4 / 3;
 	display: grid;
@@ -262,9 +194,7 @@
 						 'gallery-link gallery-tags' ;
 	grid-template-columns: 8rem auto;
 	grid-template-rows: 8rem auto 3rem;
-
 }
-
 .gallery__item-number {
 	grid-area: gallery-number;
 	font-size: 6rem;
@@ -273,7 +203,6 @@
 	padding-right: 2rem;
 	color: var(--color-gallery-number);
 }
-
 .gallery__item-title {
 	font-family: halyard-display;
 	font-size: 3vw;
@@ -281,34 +210,7 @@
 	margin: 0 10vw 0 0;
 	text-transform: initial;
 	color: var(--color-gallery-title);
-	/* color: transparent; */
-	/* -webkit-text-stroke: 0.1px #978c77;
-	text-stroke: 0.1px #978c77;
-	-webkit-text-fill-color: transparent;
-	text-fill-color: transparent; */
 }
-/* .gallery__item-title {
-	grid-area: gallery-title;
-	margin: 0;
-	font-size: 4rem;
-	font-size: clamp(2rem,5vw,4rem);
-	color: var(--color-gallery-title);
-	color: transparent;
-	-webkit-text-stroke: 3px #978c77;
-	text-stroke: 1px #978c77;
-	-webkit-text-fill-color: transparent;
-	text-fill-color: transparent;
-} */
-
-/* .gallery__item-number,
-.gallery__item-title,
-.gallery__text {
-	font-family: moret, serif;
-	font-weight: 800;
-	font-style: italic;
-	align-self: center;
-} */
-
 .gallery__item-link {
 	grid-area: gallery-link;
 	align-self: end;
@@ -325,14 +227,29 @@
 	cursor: pointer;
 	text-decoration: none; 
 }
-
+.gallery__item-link-disabled {
+	pointer-events: none;
+	grid-area: gallery-link;
+	align-self: end;
+	font-size: 1.5rem;
+	background: var(--color-gallery-link-bg);
+	color: var(--color-gallery-link);
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none; 
+}
 .gallery__item-link:focus,
 .gallery__item-link:hover {
 	background: var(--color-gallery-link-bg-hover);
 	color: var(--color-gallery-link-hover);
 	text-decoration: none;
 }
-
 .gallery__item-tags {
 	grid-area: gallery-tags;
 	color: var(--color-gallery-tags);
@@ -341,12 +258,10 @@
 	font-size: 3rem;
 	display: grid;
 	grid-auto-flow: column;
-	/* grid-gap: -10rem; */
 	cursor: pointer;
 	font-weight: 800;
 	align-self: center;
 }
-
 .gallery__text {
 	font-size: 20vw;
 	line-height: 0.8;
@@ -359,7 +274,6 @@
 	-webkit-text-fill-color: transparent;
 	text-fill-color: transparent;
 }
-
 .gallery__text-inner {
 	display: block;  
 }
@@ -370,7 +284,6 @@
 	font-size: 20vw;
 	line-height: 0.9;
 	margin: 0 10vw 0 0;
-	/* margin: 7vw 10vw 10vw 0; */
 	text-transform: uppercase;
 	color: var(--color-gallery-title);
 	color: transparent;
@@ -379,43 +292,16 @@
 	-webkit-text-fill-color: transparent;
 	text-fill-color: transparent;
 }
-
 .gallery__text-inner_name {
 	display: block;
-	/* padding-right: 100px;  */
-	/* font-size: 15vw;  */
-	/* text-transform: uppercase; */
-	/* margin-top: 100px;  */
-	/* margin-bottom: 30px;  */
 }
 .gallery__text-inner_firstname{
 	display: block;
-	/* padding-right: 100px; */
-	/*font-size: 15vw;  */
-	/* margin-top: 20px; */
-	/* text-transform: uppercase; */
 }
-/* .gallery__text-inner_job{
-	display: block; 
-	margin-top: 100px;
-	font-size: 100px;
-	text-transform: lowercase;
-} */
 
 /******************************** WORKS ***************************************/
 
-/* .gallery__item-img:nth-child(1) {
-	background: linear-gradient(0deg, #745327, transparent );
-}
-.gallery__item-img:nth-child(2) {
-	background: linear-gradient(0deg, #4e4332, transparent );
-} 
-.gallery__item-img:nth-child(3) {
-	background: linear-gradient(0deg, #070707, transparent );
-} */
-
 .gallery__content-project{
-	/* background-color: red;  */
 	position: absolute;
 	width: 100%;
 	height: 60%;
@@ -429,14 +315,6 @@
 	bottom: 0; 
 	pointer-events: none;
 }
-/* .gallery__item-imginner{
-	/* background-image: url("../img/Projects/Cms_Numenor.png") 
-	background-color: black; 
-} */
-/* .gallery__item-imginner:hover{
-	filter: blur(0.2rem);
-	background-image: url("../img/Projects/Cms_Numenor.png");
-} */
 .gallery__content-project h2{
 	margin: 0 0 10px;
  	padding: 0;
@@ -449,8 +327,8 @@
  	font-size: 20px;
 }
 
-
 /******************* STACK  *********************/
+
 .gallery__item-stack {
 	margin: 0 3vw;
 	display: grid;
@@ -459,7 +337,6 @@
 						 '... ...' ;
 	grid-template-columns: 8rem 21vmax;
 	grid-template-rows: 8rem 28vmax 3rem;
-	/* padding-top: 60px; */
 }
 .gallery__square{
 	position: relative;
@@ -469,7 +346,6 @@
 	display: flex; 
 	justify-content: center;
 	align-items: center;
-	/* background-color: red; */
 }
 .square{
 	position: relative; 
@@ -478,9 +354,7 @@
 	display: flex; 
 	justify-content: center;
 	align-items: center; 
-	/* background-color: blue; */
 }
-
 .square span:nth-child(1) {
 	position: absolute; 
 	top: 0;
@@ -492,12 +366,10 @@
 	transition: 0.5s;
 	animation: animate 6s linear infinite;
 }
-
 .square:hover span:nth-child(1) {
 	border: none;
 	background: rgba(0, 0, 0, 0.8);
 }
-
 .square span:nth-child(2) {
 	position: absolute; 
 	top: 0;
@@ -509,12 +381,10 @@
 	transition: 0.5s;
 	animation: animate 4s linear infinite;
 }
-
 .square:hover span:nth-child(2) {
 	border: none;
 	background: rgba(0, 0, 0, 0.8);
 }
-
 .square span:nth-child(3) {
 	position: absolute; 
 	top: 0;
@@ -526,7 +396,6 @@
 	transition: 0.5s;
 	animation: animate2 10s linear infinite;
 }
-
 .square:hover span:nth-child(3) {
 	border: none;
 	background: rgba(0, 0, 0, 0.8);
@@ -558,7 +427,6 @@
 	z-index: 1000;
 	white-space: normal;
 }
-
 .square:hover .content-stack{
 	color: #fff; 
 }
@@ -572,26 +440,14 @@
 
 @media all and (max-width: 3072px){
 	.gallery{
-		/* margin-top: 20vh; 
-		margin-left: 0;  */
 		margin: auto 0; 
 		padding-right: 0; 
 	}
 	.gallery__text_name{
 		margin: 0 5vw 0 0; 
 	}
-	/* body{
-		background-color:red; 
-	} */
 	/*********************** APPBAR ***********************/
-	/* .frame{ 
-		display: flex;
-		justify-content: center;
-		position: relative;
-		padding: 0;
-		margin-top: 1vh;
-		margin-bottom: 0;
-	} */
+
 	.frame__links a{
 		font-size: 1.5em;
 	}
@@ -600,17 +456,14 @@
 	}
 }
 
-
 /************************************************************************************************************************************************************************************/
 /************************************************************************************************************************************************************************************/
-/********************************************************************************* RESPONSIVE X-LARGE ********************************************************************************/
+/********************************************************************************* RESPONSIVE LARGE *********************************************************************************/
 /************************************************************************************************************************************************************************************/
 /************************************************************************************************************************************************************************************/
 
 @media all and (max-width: 1919px){
-	body{
-		/* background-color: blue; */
-	}
+	
 	.content{
 		height: 100vh;
 		justify-content: center;
@@ -631,31 +484,6 @@
 	}
 	
 }
-
-
-
-
-/************************************************************************************************************************************************************************************/
-/************************************************************************************************************************************************************************************/
-/********************************************************************************* RESPONSIVE LARGE ********************************************************************************/
-/************************************************************************************************************************************************************************************/
-/************************************************************************************************************************************************************************************/
-
-/* @media all and (max-width: 1440px){
-	.gallery{
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.gallery__text_name{
-		margin: 7vw 0 10vw 0; 
-	}
-	.gallery__content-project{
-		height:80%; 
-	}
-	body{
-		background-color:yellow; 
-	}
-} */
 
 /************************************************************************************************************************************************************************************/
 /************************************************************************************************************************************************************************************/
@@ -700,18 +528,10 @@
 		display: none;
 	}
 	/******************** STACK ********************/
-	/* .gallery__square{
-		width: 300px;
-		height: 100%;
-	}
-	.square{
-		width: 300px;
-		height: 300px; 
-	} */ 
+
 	body{
 		margin-left: 50px; 
 		padding-right: 50px;
-		/* background-color:purple;  */
 	}
 	/******************** IMAGE ********************/
 	.gallery__item-profil{
@@ -738,6 +558,7 @@
 	}
 
 	/******************** WORKS ********************/
+
 	.gallery__text{
 		margin: 10vw auto 10vw auto; 
 	}
@@ -745,7 +566,9 @@
 		padding-right: 0;
 		text-align: center;
 	}
+
 	/*************** CONTENT PROJECT ****************/
+
 	.gallery__item-img:hover{
 		transform: none;
 	}
@@ -760,11 +583,11 @@
 	}
 
 	/******************** ALL ITEMS PROJECT ********************/
+
 	.gallery__item{
 		justify-content: center;
 		padding-top: 55px;
 		grid-template-rows: 2rem 28vmax 3rem;
-		/* margin-right: 30px;  */
 	}
 	.gallery__item:nth-child(even) {
 		padding-top: 0;
@@ -780,6 +603,7 @@
 	}
 	
 	/******************** STACK ********************/
+
 	.gallery__item-stack{
 		justify-content: center;
 		grid-template-areas: '... ...'
@@ -802,6 +626,7 @@
 	}
 
 	/*********************** APPBAR ***********************/
+
 	.frame{ 
 		display: flex;
 		justify-content: center;
@@ -825,28 +650,21 @@
 /************************************************************************************************************************************************************************************/
 
 @media all and (max-width: 768px) {
+	
 	.cursor{
 		display: none; 
 	}
+
 	/******************** RESET ORIENTATION ********************/
-	/* main{
-		margin-right: 20px;
-		margin-left: 20px;
-	} */
 	
 	.gallery{
-		/* padding-top: 50%;  */
 		display: block; 
 		height: 100%;
 		width: 100%;
-		/* margin: 0 auto; */
-		/* padding: 0 20vw;  */
-		
-		/* overflow-y: scroll; 
-		overflow-x: hidden; */
 	}
 
 	/******************** NAME & SCROLL ********************/
+
 	.gallery__text_name{
 		margin: 10vw auto 10vw auto; 
 	}
@@ -859,6 +677,7 @@
 	}
 
 	/******************** IMAGE ********************/
+
 	.gallery__item-profil{
 		grid-template-areas:'gallery-image gallery-image' 
 							'gallery-image gallery-image' 
@@ -883,6 +702,7 @@
 	}
 
 	/******************** WORKS ********************/
+
 	.gallery__text{
 		margin: 10vw auto 10vw auto; 
 	}
@@ -890,7 +710,9 @@
 		padding-right: 0;
 		text-align: center;
 	}
+
 	/*************** CONTENT PROJECT ****************/
+
 	.gallery__item-img:hover{
 		transform: translateY(-10px);
 	}
@@ -906,19 +728,16 @@
 	}
 
 	/******************** ALL ITEMS PROJECT ********************/
+
 	.gallery__item{
 		justify-content: center;
 		padding-top: 35px;
 		grid-template-rows: 2rem 28vmax 3rem;
-		/* margin-right: 30px;  */
 	}
 	.gallery__item:nth-child(even) {
 		padding-top: 0;
 		padding-top: 35px;
 	}
-	/* .gallery__item:nth-child() {
-		padding-top: 5px;
-	} */
 	.gallery__item-tags{
 		font-size: 1.5em;
 		margin-top: 20px;
@@ -928,6 +747,7 @@
 	}
 	
 	/******************** STACK ********************/
+
 	.gallery__item-stack{
 		justify-content: center;
 		grid-template-areas: '... ...'
@@ -951,9 +771,10 @@
 	body{
 		margin-left: 50px; 
 		padding-right: 50px;
-		/* background-color: green;  */
 	}
+
 	/*********************** APPBAR ***********************/
+
 	.frame{ 
 		padding: 3rem 5vw;
 		text-align: center;
@@ -979,7 +800,9 @@
 /************************************************************************************************************************************************************************************/
 
 @media all and (max-width: 360px){
+
 	/************* PROFIL *****************/
+
 	.gallery__item-title-profil {
 		font-size: 2rem;
 	}
@@ -988,7 +811,9 @@
 		font-size: 2rem;
 		font-weight: normal;
 	}
+
 	/*************** CONTENT PROJECT ****************/
+
 	.gallery__item-img:hover{
 		transform: translateY(-10px);
 	}
@@ -996,9 +821,6 @@
 		line-height: 1.5;
 	}
 	.gallery__content-project{
-		/* height: 60%; */
-		/* bottom: -50%;  */
-		/* padding: 20px;  */
 		padding-top: 50px;
 	}
 	.gallery__content-project h2{
@@ -1009,17 +831,20 @@
 	}
 
 	/****************** TAGS ******************/
+
 	.gallery__item-tags {
 		font-size: 1.5rem;
 		margin-top: 10px;
 	}
 
 	/*************** GALLERY ****************/
+
 	.gallery__item {
 		grid-template-rows: 3rem 28vmax 3rem;
 	}
 
 	/******************** STACK ********************/
+
 	.gallery__item-stack {
 		margin: 0 5vw;
 	}
@@ -1035,17 +860,14 @@
 	body{
 		margin-left: 50px; 
 		padding-right: 50px;
-		/* background-color: rosybrown;  */
 	}
 }
-
 
 /************************************************************************************************************************************************************************************/
 /************************************************************************************************************************************************************************************/
 /*********************************************************************************** DARK MODE **************************************************************************************/
 /************************************************************************************************************************************************************************************/
 /************************************************************************************************************************************************************************************/
-
 
 body.dark{
 	background-color: black;
@@ -1091,8 +913,15 @@ body.dark{
 	background-color: white;
 	color: black;  
 }
+.gallery__item-link-disabled.dark{
+	background-color: white;
+	color: black;  
+}
 .gallery__item-link:focus, .gallery__item-link:hover.dark{
 	background: var(--color-gallery-link-bg-hover);
 	color: var(--color-gallery-link-hover);
 	text-decoration: none;
 }
+
+
+/*# sourceMappingURL=/style.78032849.css.map */

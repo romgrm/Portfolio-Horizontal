@@ -2,7 +2,7 @@ import { preloadImages, preloadFonts, clamp, map } from './utils';
 import Cursor from './cursor';
 import LocomotiveScroll from 'locomotive-scroll';
 
-// PRELOAD 
+// document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
 
 Promise.all([preloadImages('.gallery__item-imginner'), preloadFonts('vxy2fer')]).then(() => {
     // Remove loader (loading class)
@@ -21,7 +21,7 @@ Promise.all([preloadImages('.gallery__item-imginner'), preloadFonts('vxy2fer')])
 
 
 
-// Activation of locomotiv Scroll above 768px 
+// au dessus de 768px, on active le locomotiv scroll 
 
 
 if (window.innerWidth > 768) {
@@ -52,16 +52,15 @@ if (window.innerWidth > 768) {
 // DARK MODE 
 const button = document.querySelector('.darkButton'); 
 button.addEventListener('click', () => {
-    
+     
     const content = document.getElementById('test').innerHTML;
     document.getElementById('test').innerHTML = content == 'light' ? 'dark' : 'light';
-    
+    localStorage.setItem("dark", "1");
     document.body.classList.toggle('dark')
     document.querySelector('.gallery__item-imginner1').classList.toggle('dark')
     document.querySelector('.gallery__item-imginner2').classList.toggle('dark')
     document.querySelector('.gallery__item-imginner3').classList.toggle('dark')
     document.querySelector('.gallery__item-imginner4').classList.toggle('dark')
-    document.querySelector('.gallery__item-link-disabled').classList.toggle('dark')
     document.querySelectorAll('.gallery__content-project h2').forEach(elem => {
         elem.classList.toggle('dark')
     })
@@ -91,9 +90,8 @@ button.addEventListener('click', () => {
         elem.classList.toggle('dark')
     })
     
-    localStorage.setItem("dark", "1");
 })
-// STORAGE
+
 // Set user theme
 const userTheme = localStorage.getItem("dark");
 if (userTheme) {
