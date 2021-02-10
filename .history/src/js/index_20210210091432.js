@@ -49,13 +49,24 @@ if (window.innerWidth > 768) {
 }
 
 
-// DARK MODE 
+
 const button = document.querySelector('.darkButton'); 
 button.addEventListener('click', () => {
      
-    const content = document.getElementById('test').innerHTML;
-    document.getElementById('test').innerHTML = content == 'light' ? 'dark' : 'light';
-    
+    document.getElementById('test').innerHTML = 'light';
+    if(document.getElementById('test').classList.contains('light')){
+        document.getElementById('test').innerHTML = 'dark'
+    }
+    // if(document.getElementById('test') == 'light'){
+    //     document.getElementById('test').innerHTML = 'dark';
+    // }
+    // if(change == "DARK"){
+
+    //     change.innerHTML = "Light"; 
+    // }else{
+    //     change.innerHTML="dark"; 
+    // }
+    // document.getElementsByClassName('darkButton').value = "LIGHT"; 
     document.body.classList.toggle('dark')
     document.querySelector('.gallery__item-imginner1').classList.toggle('dark')
     document.querySelector('.gallery__item-imginner2').classList.toggle('dark')

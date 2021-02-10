@@ -1081,18 +1081,13 @@ body.dark{
 .square:hover span:nth-child(3).dark{
 	background: white; 
 }
+/* .square:hover span:nth-child(1).dark{
+	background: rgba(255, 255, 255, 0.8);
+} */
 .content-stack.dark{
 	color: white; 
 }
 .square:hover .content-stack.dark{
 	color: #000; 
 }
-.gallery__item-link.dark{
-	background-color: white;
-	color: black;  
-}
-.gallery__item-link:focus, .gallery__item-link:hover.dark{
-	background: var(--color-gallery-link-bg-hover);
-	color: var(--color-gallery-link-hover);
-	text-decoration: none;
-}
+

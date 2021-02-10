@@ -49,7 +49,7 @@ if (window.innerWidth > 768) {
 }
 
 
-// DARK MODE 
+
 const button = document.querySelector('.darkButton'); 
 button.addEventListener('click', () => {
      
