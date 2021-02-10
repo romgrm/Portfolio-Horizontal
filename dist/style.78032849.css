@@ -4,6 +4,15 @@
     zoom: 1; 
 }
 /********************************** BASE ****************************/
+.buttonNavBar{
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+.buttonNavBar:hover{
+	cursor: pointer; 
+	color: black; 
+}
 .gallery__item-title-profil-mobile, .gallery__item-tags-profil-mobile{
 	display: none 
 }
@@ -166,7 +175,7 @@
 .gallery__item-imginner1:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Cms_Numenor.20c40e7e.png");
+	background-image: url("Cms_Numenor.20c40e7e.png");
 }
 .gallery__item-imginner1:hover p, .gallery__item-imginner2:hover p, .gallery__item-imginner3:hover p, .gallery__item-imginner4:hover p{
 	display: none; 
@@ -174,12 +183,12 @@
 .gallery__item-imginner2:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/jenaipasdevoiture.9c0dea93.png");
+	background-image: url("jenaipasdevoiture.9c0dea93.png");
 }
 .gallery__item-imginner3:hover{
 	opacity: .5; 
 	filter: blur(0.2rem);
-	background-image: url("/Pokedex.3aecef88.png");
+	background-image: url("Pokedex.3aecef88.png");
 }
 .gallery__item-imginner4:hover{
 	opacity: .5; 
@@ -922,6 +931,9 @@ body.dark{
 	color: var(--color-gallery-link-hover);
 	text-decoration: none;
 }
-
-
-/*# sourceMappingURL=/style.78032849.css.map */
+/* a.dark:hover{
+	color: white; 
+} */
+.buttonNavBar.dark:hover{
+	color: white; 
+}

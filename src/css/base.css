@@ -68,17 +68,20 @@ body {
 	}
 }
 
-a {
+/* a {
 	text-decoration: none;
 	color: var(--color-link);
 	outline: none;
-}
+} 
 
-a:hover,
-a:focus {
-	color: var(--color-link-hover);
+a:hover, a:focus{
+	color: var(--color-link);
 	outline: none;
-}
+} */
+
+/* a:hover, a:focus.dark{
+	color: white; 
+}  */
 
 .frame {
 	padding: 3rem 5vw;
