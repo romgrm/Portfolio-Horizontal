@@ -9476,8 +9476,8 @@ button.addEventListener('click', function () {
   document.querySelector('.gallery__item-imginner1').classList.toggle('dark');
   document.querySelector('.gallery__item-imginner2').classList.toggle('dark');
   document.querySelector('.gallery__item-imginner3').classList.toggle('dark');
-  document.querySelector('.gallery__item-imginner4').classList.toggle('dark');
-  document.querySelector('.gallery__item-link-disabled').classList.toggle('dark');
+  document.querySelector('.gallery__item-imginner4').classList.toggle('dark'); // document.querySelector('.gallery__item-link-disabled').classList.toggle('dark')
+
   document.querySelectorAll('.gallery__content-project h2').forEach(function (elem) {
     elem.classList.toggle('dark');
   });
